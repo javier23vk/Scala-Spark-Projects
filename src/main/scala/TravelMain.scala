@@ -3,7 +3,7 @@
 import org.apache.spark.sql._
 import org.apache.log4j._
 
-import org.apache.spark.sql.types._
+
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.expressions._
 
@@ -19,7 +19,7 @@ object TravelMain {
     val spark = SparkSession.builder().master("local[*]").appName("MyRealState").getOrCreate()
     import spark.implicits._
 
-    val data  = spark.read.option("header",true).csv("./resources/Travel details dataset.csv")
+    val data  = spark.read.option("header",value = true).csv("./resources/Travel details dataset.csv")
     val dataWithCorrectNames = data
       .withColumnRenamed("Start date", "StartDate")
       .withColumnRenamed("End date", "EndDate")
