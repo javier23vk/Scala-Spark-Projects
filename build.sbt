@@ -1,8 +1,8 @@
-name := "SparkScalaCourse"
+name := "TravelTrends"
 
-version := "0.1"
+version := "1.0"
 
-scalaVersion := "2.12.12"
+scalaVersion := "2.12.6"
 
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "3.0.0",
