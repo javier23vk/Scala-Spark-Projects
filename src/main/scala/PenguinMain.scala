@@ -99,7 +99,6 @@ object PenguinMain {
       val accuracy = predStreamed
         .select("label", "prediction")
         .withColumn("acierto", $"label"===$"prediction")
-      accuracy.printSchema()
 
       accuracy.writeStream
         .outputMode("append")
