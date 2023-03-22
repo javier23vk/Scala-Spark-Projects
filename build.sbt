@@ -1,4 +1,4 @@
-name := "TravelTrends"
+name := "ScalaSparkProjects"
 
 version := "1.0"
 

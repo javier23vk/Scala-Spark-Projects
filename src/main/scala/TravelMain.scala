@@ -59,7 +59,7 @@ object TravelMain {
 
 
     val resUnited = resGrouped.join(percentages,usingColumn = "City")
-    resUnited.show()
+    resUnited.show(50)
     spark.close()
   }
 }
